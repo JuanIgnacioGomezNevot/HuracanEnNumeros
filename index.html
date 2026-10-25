@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="img/letra-h.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,65 +22,41 @@
     </button>
     <nav class="main-nav" aria-label="Navegación principal">
       <a class="active" href="#inicio">Inicio</a>
-      <a href="#partidos">Partidos</a>
-      <a href="#jugadores">Jugadores</a>
-      <a href="#titulos">Títulos</a>
-      <a href="#historia">Línea de tiempo</a>
-      <a href="#estadisticas">Estadísticas</a>
-      <a href="#clasico">Modo clásico</a>
-      <button class="search-button" type="button" aria-label="Buscar">
-        <span></span>
-      </button>
+      <a href="screens/partidos.html">Partidos</a>
+      <a href="screens/jugadores.html">Jugadores</a>
+      <a href="screens/titulos.html">Títulos</a>
+      <a href="screens/linea-tiempo.html">Línea de tiempo</a>
+      <a href="screens/estadisticas.html">Estadísticas</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-content">
-        <div class="welcome">
-          <p class="eyebrow">Bienvenido a</p>
-          <h1>Huracán<br>en Números</h1>
-          <div class="red-rule"></div>
-          <p class="hero-copy">Estadísticas, historias y protagonistas<br class="desktop-only"> del Club Atlético Huracán, en un solo lugar.</p>
-          <p class="signature">Siempre a tu lado</p>
-        </div>
-        <div class="numbers-card">
-          <div class="card-heading"><span></span><h2>El globo en cifras</h2><span></span></div>
-          <div class="stats-grid">
-            <div class="stat"><span class="stat-icon">♜</span><strong data-count="10">10</strong><small>Títulos<br>nacionales</small></div>
-            <div class="stat"><span class="stat-icon">⚽</span><strong data-count="118">118</strong><small>Años de<br>historia</small></div>
-            <div class="stat"><span class="stat-icon">♟</span><strong>1.000+</strong><small>Partidos<br>disputados</small></div>
-            <div class="stat"><span class="stat-icon">♢</span><strong data-count="7">7</strong><small>Copas<br>internacionales</small></div>
-            <div class="stat"><span class="stat-icon">♧</span><strong>+300</strong><small>Jugadores<br>históricos</small></div>
-            <div class="stat"><span class="stat-icon">◉</span><strong>1</strong><small>Identidad:<br>el Globo</small></div>
-          </div>
-        </div>
-      </div>
+      <img class="hero-image" src="img/Prueba fondo.jfif" alt="Huracán en Números: bienvenida y estadísticas del Club Atlético Huracán">
     </section>
 
     <section class="quick-links" aria-label="Accesos rápidos">
-      <a href="#partidos" id="partidos"><span class="quick-icon">▥</span><span>Partidos<br>históricos</span><b>→</b></a>
-      <a href="#jugadores" id="jugadores"><span class="quick-icon">♟</span><span>Jugadores<br>que dejaron huella</span><b>→</b></a>
-      <a href="#titulos" id="titulos"><span class="quick-icon">♜</span><span>Títulos<br>y competencias</span><b>→</b></a>
-      <a href="#estadisticas" id="estadisticas"><span class="quick-icon">♢</span><span>Estadísticas<br>generales</span><b>→</b></a>
-      <a href="#historia" id="historia"><span class="quick-icon">◷</span><span>Línea de<br>tiempo</span><b>→</b></a>
+      <a href="screens/partidos.html" id="partidos"><span class="quick-icon"><img src="img/icono/Partidos Históricos (PNG transparente).png" alt=""></span><span>Partidos<br>históricos</span><b>→</b></a>
+      <a href="screens/jugadores.html" id="jugadores"><span class="quick-icon"><img src="img/icono/Jugadores que dejaron huella (PNG transparente).png" alt=""></span><span>Jugadores<br>que dejaron huella</span><b>→</b></a>
+      <a href="screens/titulos.html" id="titulos"><span class="quick-icon"><img src="img/icono/Títulos y Competencias (PNG transparente).png" alt=""></span><span>Títulos<br>y competencias</span><b>→</b></a>
+      <a href="screens/estadisticas.html" id="estadisticas"><span class="quick-icon"><img src="img/icono/Estadísticas Generales (PNG transparente).png" alt=""></span><span>Estadísticas<br>generales</span><b>→</b></a>
+      <a href="screens/linea-tiempo.html" id="historia"><span class="quick-icon"><img src="img/icono/Línea de Tiempo (PNG transparente).png" alt=""></span><span>Línea de<br>tiempo</span><b>→</b></a>
     </section>
 
-    <section class="story-section">
-      <div class="story-media" role="img" aria-label="La hinchada de Huracán">
-        <div class="play-button" aria-hidden="true">▶</div>
+    <section class="next-match" id="proxima-fecha">
+      <div class="next-match-media">
+        <img src="img/partidos/Rosario_V.jpeg" alt="Huracán vs Rosario Central en el Gigante de Arroyito">
       </div>
-      <div class="story-copy">
-        <p class="eyebrow">Momentos clave</p>
-        <h2>Una línea de tiempo<br>para contar la historia</h2>
-        <p>Desde su fundación hasta la actualidad, repasá los momentos más importantes del Globo, partido a partido, generación tras generación.</p>
-        <a class="outline-button" href="#historia">Ver línea de tiempo <span>→</span></a>
+      <div class="next-match-copy">
+        <p class="eyebrow">Próxima fecha</p>
+        <h2>Huracán<br>vs Rosario Central</h2>
+        <p>El Globo vuelve a jugar ante Rosario Central en el Gigante de Arroyito.</p>
       </div>
       <aside class="quote-card" id="clasico">
         <p>Más que un club,<br>una historia.</p>
         <div class="red-rule"></div>
         <small>Revive los grandes momentos, los ídolos y los números que hacen grande al Club Atlético Huracán.</small>
-        <div class="balloon" aria-hidden="true">H</div>
+        <img class="balloon-image" src="img/globo/Globo recortada al borde y con fondo transparente.png" alt="" aria-hidden="true">
       </aside>
     </section>
   </main>
